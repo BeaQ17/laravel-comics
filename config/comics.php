@@ -214,50 +214,7 @@ return [
                 "Joëlle Jones"
             ],
         ],
-        ]
-    ],
-
-    'menu' => [
-        [
-            "href" => route("characters"),
-            "text" => "CHARACTERS",
-        ],
-        [
-            "href" => route("comics"),
-            "text" => "COMICS",
-        ],
-        [
-            "href" => route("movies"),
-            "text" => "MOVIES",
-        ],
-        [
-            "href" => route("tv"),
-            "text" => "TV",
-        ],
-        [
-            "href" => route("games"),
-            "text" => "GAMES",
-        ],
-        [
-            "href" => route("collectibles"),
-            "text" => "COLLECTIBLES",
-        ],
-        [
-            "href" => route("videos"),
-            "text" => "VIDEOS",
-        ],
-        [
-            "href" => route("fans"),
-            "text" => "FANS",
-        ],
-        [
-            "href" => route("news"),
-            "text" => "NEWS",
-        ],
-        [
-            "href" => route("shop"),
-            "text" => "SHOP",
-        ]
     ]
+    ] //ma sta parentesi?
 ];
 
