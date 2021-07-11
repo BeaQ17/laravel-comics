@@ -1,1 +1,19 @@
 //
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 70%;
+    margin: auto;
+}
+
+.blue_stripe{
+    background-color: #0282F9;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    padding: 15px 0px 15px 0px;
+}

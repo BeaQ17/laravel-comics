@@ -19,7 +19,7 @@
                 <img src="../laravel-comics/images/dc-logo.png" alt="DC logo" class="logo">
                 <ul>
                     <li>CHARACTERS</li>
-                    <li>COMICS</li>
+                    <li><a href="comics.blade.php"></a> COMICS</li>
                     <li>MOVIES</li>
                     <li>TV</li>
                     <li>GAMES</li>
