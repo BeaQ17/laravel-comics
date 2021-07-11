@@ -1,3 +1,16 @@
+@extends('layout.app')
+
+@section('title', 'Comics page')
+    
+@section('content')
+    <h1>Comics page</h1>
+@endsection
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
