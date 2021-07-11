@@ -15,11 +15,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name("home");
 
 Route::get('/characters', function () {
     return view('Characters Page');
-});
+})->name("characters");
 
 
 
@@ -27,27 +27,38 @@ Route::get('/characters', function () {
 Route::get('/comics', function () {
     $comics = config("comics.data");
     // ddd($comics);
-    return view('comics', $comics);
-});
-
+return view('comics', $comics );
+})->name("comics");
 
 
 Route::get('/movies', function () {
     return view('Movies Page');
-});
+})->name("movies");
 
 Route::get('/tv', function () {
     return view('TV Page');
-});
+})->name("tv");
 
 Route::get('/games', function () {
     return view('Games Page');
-});
+})->name("games");
+
+Route::get('/collectibles', function () {
+    return view('Collectibles Page');
+})->name("collectibles");
+
+Route::get('/videos', function () {
+    return view('Videos Page');
+})->name("videos");
+
+Route::get('/fans', function () {
+    return view('Fans Page');
+})->name("fans");
 
 Route::get('/news', function () {
     return view('News Page');
-});
+})->name("news");
 
 Route::get('/shop', function () {
     return view('Shop Page');
-});
+})->name("shop");

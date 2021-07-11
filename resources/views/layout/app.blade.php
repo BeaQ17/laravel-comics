@@ -20,9 +20,6 @@
     
     <!-- HEADER -->
     @include('partials.header')
-    
-    
-   
 
     <!-- MAIN -->
     <main id="site_main">

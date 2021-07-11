@@ -4,22 +4,6 @@
     
 @section('content')
     <h1>Comics page</h1>
-@endsection
-
-
-
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DC Comics</title>
-</head>
-<body>
 
     <div class="cards">
         @foreach ($comics as $comic)
@@ -27,6 +11,7 @@
             <p>{{$comic["title"]}}</p>
         @endforeach
     </div>
+    
+@endsection
 
-</body>
-</html>
+   
