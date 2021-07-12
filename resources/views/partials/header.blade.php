@@ -56,7 +56,7 @@ $menu = [
 
     <div class="white">
         <div class="container">
-            <img src="../laravel-comics/images/dc-logo.png" alt="DC logo" class="logo">
+            <img src="/resources/images/dc-logo.png" alt="DC logo" class="logo">
             <ul>
                 @foreach ($menu as $item)
                     <li>
@@ -69,7 +69,7 @@ $menu = [
     </div>
 
     <div class="jumbotron">
-        <img src="../laravel-comics/images/jumbotron.jpg" alt="jumbotron image">
+        <img src="../../images/jumbotron.jpg" alt="jumbotron image">
     </div>
 
 
