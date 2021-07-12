@@ -27,8 +27,19 @@ Route::get('/characters', function () {
 Route::get('/comics', function () {
     $comics = config("comics.data");
     // ddd($comics);
-return view('comics', $comics );
+return view('comics.index', $comics );
 })->name("comics");
+
+/* comic singolo*/
+Route::get("comics/{id}", function($id) {
+    $comics = config("comics.data");
+    //ddd($comics[$id]);
+
+    $comic = $comics[$id];
+    return view("comics.show", compact("comic"));
+})->name("comic");
+
+/********/
 
 
 Route::get('/movies', function () {

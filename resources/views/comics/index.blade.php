@@ -1,3 +1,5 @@
+<!-- INDEX: indice di tutti gli elementi -->
+
 @extends('layout.app')
 
 @section('title', 'Comics page')
