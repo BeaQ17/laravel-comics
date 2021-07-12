@@ -32,7 +32,7 @@ return view('comics.index', $comics );
 
 /* comic singolo*/
 Route::get("comics/{id}", function($id) {
-    $comics = config("comics.data");
+    $comics = config("comics.data.comics");
     //ddd($comics[$id]);
 
     $comic = $comics[$id];
