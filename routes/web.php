@@ -22,6 +22,7 @@ Route::get('/characters', function () {
 })->name("characters");
 
 
+/************/
 
 /* Comics route */
 Route::get('/comics', function () {
@@ -34,12 +35,17 @@ return view('comics.index', $comics );
 Route::get("comics/{id}", function($id) {
     $comics = config("comics.data.comics");
     //ddd($comics[$id]);
-
-    $comic = $comics[$id];
-    return view("comics.show", compact("comic"));
+    if(is_numeric($id) && $id < count($comics) && $id >= 0){
+        $comic = $comics[$id];
+        return view("comics.show", compact("comic"));
+    } else {
+        abort(404);
+    }
+    
+    
 })->name("comic");
 
-/********/
+/************/
 
 
 Route::get('/movies', function () {

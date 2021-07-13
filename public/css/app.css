@@ -3,12 +3,36 @@
   margin: auto;
 }
 
+.flex_end {
+  display: flex;
+  justify-content: flex-end;
+}
+.flex_end p {
+  margin-left: 50px;
+}
+
 .blue_stripe {
   background-color: #0282F9;
   display: flex;
   justify-content: flex-end;
   color: white;
   padding: 15px 0px 15px 0px;
+}
+
+.white {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.white .logo {
+  margin-right: 100px;
+  height: 100px;
+}
+.white ul li {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  margin: 0px 10px 0px 10px;
 }
 
 * {
