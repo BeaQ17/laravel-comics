@@ -5,12 +5,13 @@
 @section('title', 'Comics page')
     
 @section('content')
-    <h1>Comics page</h1>
-
+    
     <div class="cards">
-        @foreach ($comics as $comic)
-            <img src="{{ $comic["thumb"]}}" alt="thumbnail comic picture">
-            <p>{{$comic["title"]}}</p>
+        @foreach ($comics as $index => $comic)
+            <a href="{{route("comic", ["id" => $index])}}">
+                <img src="{{ $comic["thumb"]}}" alt="thumbnail comic picture">
+                <p>{{$comic["title"]}}</p>
+            </a>
         @endforeach
     </div>
     
